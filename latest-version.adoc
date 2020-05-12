@@ -1,4 +1,4 @@
 == Latest version
 - OpenBSD release 6.6
-- OpenBSD release 12.1
+- FreeBSD release 12.1
 - NetBSD  release 9.0
