@@ -1,0 +1,10 @@
+== Firewall
+* OpenBSD: Packet Fitler (PF)
+* FreeBSD: 3 options 
+  - PF
+  - IPFW
+  - IPFilter
+* NetBSD: 3 options
+  - an old PF version
+  - IPFilter
+  - NPF (you should use this one)
