@@ -1,0 +1,50 @@
+== Booting to Single-User Mode
+
+Once init takes control of the booting process, it can place the system in single-user mode instead of completing all the 
+initialization tasks required for multiuser mode. Single-user mode is a system state designed for administrative and 
+maintenance activities, which require complete and unshared control of the system. This system state is selected by a 
+special boot command parameter or option; on some systems, the administrator may select it by pressing a designated key 
+at a specific point in the boot process.
+
+To initiate single-user mode, init forks to create a new process, which then executes the default 
+shell (usually /bin/sh) as user root. The prompt in single-user mode is the number sign (#), 
+the same as for the superuser account, reflecting the root privileges inherent in it. Single-user mode is occasionally 
+called maintenance mode .
+
+Another situation in which the system might enter single-user mode automatically occurs if there are any problems 
+in the boot process that the system cannot handle on its own. Examples of such circumstances include filesystem problems 
+that fsck cannot fix in its default mode and errors in one of the system initialization files. The system administrator 
+must then take whatever steps are necessary to resolve the problem. Once this is done, booting may continue to multiuser 
+mode by entering CTRL-D, terminating the single-user mode shell.
+
+Single-user mode represents a minimal system startup. Although you have root access to the system, many of the normal system 
+services are not available at all or are not set up. On a mundane level, the search path and terminal type are often not 
+set correctly. Less trivially, no daemons are running, so many Unix facilities are shut down (e.g., printing). In general, 
+the system is not connected to the network. The available filesystems may be mounted read-only, so modifying files is initially 
+disabled (we’ll see how to overcome this in a bit). Finally, since only some of the filesystems are mounted, only commands 
+that physically reside on these filesystems are available initially.
+
+This limitation is especially noticeable if /usr was created on a separate disk partition from the root filesystem and is 
+not mounted automatically under single-user mode. In this case, even commands stored in the root filesystem (in /bin, for example) 
+will not work if they use shared libraries stored under /usr. Thus, if there is some problem with the /usr filesystem, you will 
+have to make do with the tools that are available. For such situations, however rare and unlikely, 
+you should know how to use the ed editor if vi is not available in single-user mode; you should know which tools are 
+available to you in that situation before you have to use them.
+
+On a few systems, vendors have exacerbated this problem by making /bin a symbolic link to /usr/bin, thereby rendering the 
+system virtually unusable if there is a problem with a separate /usr filesystem.
+
+Now, how to boot manually in single user mode ?
+2 ways :
+
+- On startup, at the boot prompt:
+
+....
+boot> boot -s
+....
+
+- Or using the file /etc/boot.conf:
+
+....
+# echo "boot -s" >> /etc/boot.conf
+....
