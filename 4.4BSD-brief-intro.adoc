@@ -1,0 +1,13 @@
+== 4.4 BSD
+
+*BSD* (Berkeley Software Distribution), sometimes called Berkeley Unix, 
+it is the Unix operating system developed and distributed by the Computer 
+Systems Research Group (*CSRG*) of the University of California, Berkeley, from 1977 to 1995. 
+
+Historically, BSD has been considered as a branch of UNIX — "BSD UNIX", 
+because it shared the initial codebase and design with the original AT&T UNIX operating system.
+
+The final release from Berkeley was 1995's 4.4BSD-Lite Release 2, 
+after which the CSRG was dissolved and development of BSD at Berkeley ceased. 
+Since then, several variants based directly or indirectly on 4.4BSD-Lite 
+(such as FreeBSD, NetBSD, OpenBSD and DragonFly BSD) have been maintained.
