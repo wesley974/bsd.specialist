@@ -2,4 +2,4 @@
 - OpenBSD: _secure-by-default_ has produced one of the most robust operating systems available. OpenBSD claims three years without a
 remote root-exploit allowing many system administrators to sleep better at night.
 - FreeBSD: provides a stable and fast general purpose operating system that may be used for any purpose without strings attached.
-- NetBSD: provides a portable system, which runs on many hardware platforms
+- NetBSD: provides a portable system, which runs on many hardware platforms.
