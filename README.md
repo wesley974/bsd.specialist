@@ -3,6 +3,8 @@
 
 ## Course Curriculum
 
+### A brief introduction about 4.4BSD
+
 ### 1. BSD Installation and Software Management
 
   &nbsp;&nbsp;&nbsp;&nbsp; a. BSD Operating System Installation
