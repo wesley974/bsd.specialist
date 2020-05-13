@@ -14,6 +14,6 @@ TIP: You can run a command line in background just adding a `&` at the end of th
 
 `stop _%job_` stops the current or specified jobs that are executing in the background.
 
-`notify _[%job]_` %job Causes the shell to notify the user asynchronously when the status of the current or specified jobs change.
+`notify _[%job]_` causes the shell to notify the user asynchronously when the status of the current or specified jobs change.
 
-WARNING: notify is not available on ksh, and sh.
+WARNING: `notify` is not available on ksh, and sh.
