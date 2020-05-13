@@ -13,7 +13,7 @@
 |pkg info
 |pkg_info
 
-|Install software packages, 
+|Install software packages
 |pkg_add
 |pkg install
 |pkg_add
