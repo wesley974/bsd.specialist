@@ -1,0 +1,19 @@
+== Control process execution
+
+*jobs*, *bg*, *fg*, *stop*, and *notify* are shell built-in commands.
+
+TIP: If you are running a job and wish to do something else you may press <Ctrl-z> which sends a STOP signal to the current job.
+
+TIP: You can run a command line in background just adding a `&` at the end of the line, example: `sleep 10 && echo Hello World &`
+
+`jobs` displays the status of the jobs that were started in the current shell environment
+
+`fg _[%job]_` brings the current or specified jobs into the foreground, continuing them if they were stopped.
+
+`bg _[%job]_` puts the current or specified jobs into the background, continuing them if they were stopped.
+
+`stop _%job_` stops the current or specified jobs that are executing in the background.
+
+`notify _[%job]_` %job Causes the shell to notify the user asynchronously when the status of the current or specified jobs change.
+
+WARNING: notify is not available on ksh, and sh.
