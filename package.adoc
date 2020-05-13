@@ -9,22 +9,22 @@
 |NetBSD
 
 |Display information on software packages
-|pkg_info _name_
-|pkg info _name_
-|pkg_info _name_
+|`pkg_info _name_`
+|`pkg info _name_`
+|`pkg_info _name_`
 
 |Packages search
-|pkg_info -Q _query_
-|pkg search _query_
-|??
+|`pkg_info -Q _query_`
+|`pkg search _query_`
+|`pkgin search _query_` (can be installed from sysinst)
 
 |Install software packages
-|pkg_add _name_
-|pkg install _name_
-|pkg_add _name_
+|`pkg_add _name_`
+|`pkg install _name_`
+|`pkg_add _name_`
 
 |Delete software package distributions
-|pkg_delete _name_
-|pkg delete _name_
-|pkg_delete _name_
+|`pkg_delete _name_`
+|`pkg delete _name_`
+|`pkg_delete _name_`
 |===
