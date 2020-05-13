@@ -1,0 +1,25 @@
+== Package management
+
+.Command line
+[cols="2,1,1,1", options="header"]
+|===
+|Action
+|OpenBSD
+|FreeBSD 
+|NetBSD
+
+|Display information on software packages
+|pkg_info
+|pkg info
+|pkg_info
+
+|Install software packages, 
+|pkg_add
+|pkg install
+|pkg_add
+
+|Delete software package distributions
+|pkg_delete
+|pkg delete
+|pkg_delete
+|===
