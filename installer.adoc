@@ -1,4 +1,4 @@
 == System installer
-- OpenBSD: this is a Korn shell script named *install.sub*, see at http://cvsweb.openbsd.org/src/distrib/miniroot/install.sub
-- FreeBSD: this is a Bourne shell script named *bsdinstall*, see at https://github.com/freebsd/freebsd/tree/master/usr.sbin/bsdinstall
-- NetBSD: *sysinst*, a C program, see at http://cvsweb.netbsd.org/bsdweb.cgi/src/usr.sbin/sysinst/
+- OpenBSD: *bsd.rd*, a ramdisk kernel, source at http://cvsweb.openbsd.org/src/distrib/miniroot
+- FreeBSD: *bsdinstall*, a Bourne shell script, source at https://github.com/freebsd/freebsd/tree/master/usr.sbin/bsdinstall
+- NetBSD: *sysinst*, a C program, source at http://cvsweb.netbsd.org/bsdweb.cgi/src/usr.sbin/sysinst
