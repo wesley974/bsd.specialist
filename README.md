@@ -1,6 +1,14 @@
 # 🔖 bsd.specialist
 *The main goal of this repo is to help you to pass the LPI 702-100 exam successfully!*
 
+> ## NEWS FROM LPI
+> May 13, 2020
+>
+> Linux Professional Institute to Offer Online Testing
+In response to the closing of many of its global testing locations, Linux Professional Institute (LPI) will offer online testing to candidates.
+>
+> LPI will begin offering the Linux Essentials and LPIC-1 (101 and 102) exams in English via the Pearson VUE OnVUE system on May 31, 2020. Candidates will be able to write the exams and get certified from home. Additional exams and languages will be made available as soon as possible. Candidates will be able to schedule their online exams beginning May 31. Further instructions on the registration and testing process will be published on https://www.lpi.org/coronavirus.
+
 ## Course Curriculum
 
 ### A brief introduction about 4.4BSD
