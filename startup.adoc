@@ -1,0 +1,15 @@
+== OpenBSD startup process
+
+== Cold starts
+
+PC computers and clones will perform a POST (Power On Self Test) upon being booted cold. This test will find and initialize memory, keyboard, and other devices. It will search for and initialize any extension ROMs that are present, and then attempt to boot the operating system from an available boot drive.
+
+== Warm starts
+
+The BIOS loads the first block (at physical location: track 0, head 0, sector 1) off the boot device into memory, and if the last two bytes in the block match the signature 0xAA55, the BIOS considers the block a valid bootable drive. The BIOS then proceeds to call the machine code program in this block.
+
+There are two different types of boot blocks on devices. There is the MBR (master boot record) and the PBR (partition boot record). A digression into a little piece of history will quickly give light as to why this is so. In the beginning, the PC “architecture” came with single or dual floppy drives, and no hard drives. The only type of bootable sectors on any device were the PBRs. They were responsible for loading the rest of the operating system from the correct device. When hard disks came out, it was felt that such a huge space should be able to be partitioned into separate drives, and this is when the MBR was invented.
+
+The MBR relocates itself upon being loaded and invoked by the BIOS. Embedded within the MBR is a partition table, with four partition table entries. The MBR code traverses this table (which was loaded with the MBR by the BIOS), looking for an active entry, and then loads the MBR or PBR from the disk location specified by the partition table entry. So in reality, the MBR is nothing more than a fancy chaining PBR.
+
+On most OpenBSD systems, booting OpenBSD from the BIOS will load the OpenBSD-specific first-stage bootstrap, biosboot(8), which in turn will locate and load the second-stage bootstrap, boot(8).
