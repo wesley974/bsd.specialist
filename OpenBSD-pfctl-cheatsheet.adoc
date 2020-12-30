@@ -1,4 +1,4 @@
-== OpenBSD PF cheatsheet
+== OpenBSD pfctl cheatsheet
 
 - General PFCTL Commands
 
